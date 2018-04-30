@@ -1,0 +1,144 @@
+body {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: black;
+  background-image: url(patterns/batthern.png), url(patterns/asfalt-light.png);
+  color: white;
+  margin: 0;
+  padding: 30px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  border: 1px solid white;
+  padding: 20px 10px;
+  width: 300px;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+ul li {
+  display: inline-block;
+}
+
+nav ul {
+  font-size: 1.5em;
+  margin: 20px 10px 10px 10px;
+}
+
+nav ul li {
+  flex: 0 1 85px;
+  text-align: center;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+}
+
+.carrousel ul li {
+  flex: 0 0 auto;
+  border: 1px solid white;
+  text-align: center;
+  padding: 3px;
+  margin: 0 3px;
+  margin-bottom: 5px;
+  width: auto;
+  height: 15px;
+}
+
+main {
+  background: linear-gradient(white, rgba(255,255,255,0)), url(patterns/skulls.png);
+}
+
+article {
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+article h3 {
+  margin: 14px 10px 0 10px;
+}
+
+article p {
+  margin: 0 10px auto 10px;
+}
+
+@media screen and (min-width: 860px) {
+  header {
+    padding-bottom: 0;
+  }
+
+  .carrousel-nav {
+    display: flex;
+    margin: 0 20px 0 20px;
+  }
+
+  .carrousel-nav h2 {
+    flex: 0 0 50%;
+    text-align: left;
+  }
+
+  .carrousel-nav ul {
+    flex: 0 0 50%;
+    margin-top: 5px;
+  }
+
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  article {
+    flex: 1 0 420px;
+    margin: 20px 5px;
+    width: 420px;
+    padding-bottom: 10px;
+  }
+
+  article:last-of-type {
+    max-width: 49%; /* not strech */
+  }
+}
+
+@media screen and (min-width: 1095px) {
+  .carrousel-nav {
+    margin-top: 0;
+  }
+
+  .carrousel-nav ul {
+    margin: 17px 0;
+  }
+}
+
+@media screen and (min-width: 1305px) {
+  article {
+    flex: 1 0 400px;
+
+  }
+
+  article:nth-of-type(10), article:nth-of-type(11) {
+    flex: 1 0 320px;
+    max-width: 32.5%; /* not strech */
+  }
+}
