@@ -6,4 +6,4 @@ Sample website using CSS flexbox.
 
 ### Technical Architecture
 
-Website developed using: HTML, JS and CSS.
+Website developed using: HTML and CSS.
